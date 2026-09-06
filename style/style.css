@@ -1,6 +1,10 @@
 
-body {
+html, body {
 
     background-color: #aae5a4;
 
+}
+
+header {
+    text-align: center;
 }
