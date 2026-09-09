@@ -17,7 +17,6 @@ async function Wikipedia(UserInput) {
 }
 
 async function YTB(UserInput) {
-    //const api = '<API_KEY>';
     const url ='https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + encodeURIComponent(UserInput) + '&key=' + api + '&maxResults=5&type=video';
     try {
         const output = await fetch(url);
@@ -59,7 +58,6 @@ Searchbutton.addEventListener("click", async () => {
     const SearchResults = [];
     if (userInputValue) {
         SearchResults.push(await Wikipedia(userInputValue));
-        //SearchResults.push(await YTB(userInputValue));
         await displayResults(SearchResults);
 
     } else {
