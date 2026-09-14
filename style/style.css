@@ -1,4 +1,3 @@
-
 html, body {
     margin: 0;
     padding: 0;
@@ -10,3 +9,9 @@ header {
     text-align: center;
 }
 
+.avid1 { 
+    display: inline-block; 
+    position: relative;
+    margin-top: 10rem;
+    left: 100rem; 
+}
